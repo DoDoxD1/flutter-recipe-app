@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'MySearchBar.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -49,8 +51,13 @@ class _HomePageState extends State<HomePage> {
         ],
         centerTitle: true,
       ),
+      backgroundColor: Colors.white,
       body: const Center(
-        child: Text("Recipe", style: TextStyle(fontSize: 42)),
+        child: Column(
+          children: [
+            MySearchBar()
+          ],
+        ),
       ),
     );
   }
