@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class MyAppBar extends StatelessWidget {
-  const MyAppBar({super.key});
-
+  MyAppBar({required this.title,super.key});
+  String title;
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text(
-        'Breakfast',
-        style: TextStyle(
+      title: Text(
+        title,
+        style: const TextStyle(
             fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
       ),
       backgroundColor: Colors.white,

@@ -14,14 +14,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       appBar:
-          PreferredSize(preferredSize: Size.fromHeight(56), child: MyAppBar()),
+          PreferredSize(preferredSize: const Size.fromHeight(56), child: MyAppBar(title: "Breakfast",)),
       backgroundColor: Colors.white,
-      body: Center(
-        child: Column(
-          children: [MySearchBar(), CategoriesSection()],
-        ),
+      body: const Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [MySearchBar(), SizedBox(height: 40,), CategoriesSection()],
       ),
     );
   }
