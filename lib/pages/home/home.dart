@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../MyAppBar.dart';
 import 'CategoriesSection.dart';
+import 'DietsSection.dart';
 import 'MySearchBar.dart';
 
 class HomePage extends StatefulWidget {
@@ -20,7 +21,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       body: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [MySearchBar(), SizedBox(height: 40,), CategoriesSection()],
+        children: [MySearchBar(), SizedBox(height: 40,), CategoriesSection(), DietsSection()],
       ),
     );
   }
