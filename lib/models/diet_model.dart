@@ -43,8 +43,8 @@ class Diet {
     ));
 
     diets.add(Diet(
-      name: 'Honey Pancake',
-      iconPath: 'assets/icons/canai-bread.svg',
+      name: 'Salmon Nigiri',
+      iconPath: 'assets/icons/salmon-nigiri.svg',
       level: 'Easy',
       duration: '30mins',
       calorie: '180Cal',

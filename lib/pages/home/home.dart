@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipie_application/pages/home/PopularSection.dart';
 
 import '../MyAppBar.dart';
 import 'CategoriesSection.dart';
@@ -16,12 +17,31 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
-          PreferredSize(preferredSize: const Size.fromHeight(56), child: MyAppBar(title: "Breakfast",)),
+      appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(56),
+          child: MyAppBar(
+            title: "Breakfast",
+          )),
       backgroundColor: Colors.white,
-      body: const Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [MySearchBar(), SizedBox(height: 40,), CategoriesSection(), SizedBox(height: 40,), DietsSection()],
+      body: ListView(
+        children: [
+          const MySearchBar(),
+          const SizedBox(
+            height: 40,
+          ),
+          const CategoriesSection(),
+          const SizedBox(
+            height: 40,
+          ),
+          const DietsSection(),
+          const SizedBox(
+            height: 40,
+          ),
+          const PopularSection(),
+          const SizedBox(
+            height: 40,
+          )
+        ],
       ),
     );
   }
