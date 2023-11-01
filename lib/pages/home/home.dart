@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.white,
       body: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [MySearchBar(), SizedBox(height: 40,), CategoriesSection(), DietsSection()],
+        children: [MySearchBar(), SizedBox(height: 40,), CategoriesSection(), SizedBox(height: 40,), DietsSection()],
       ),
     );
   }

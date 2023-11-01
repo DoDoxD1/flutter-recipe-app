@@ -35,7 +35,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: Lottie.asset("assets/animations/animate.json",fit: BoxFit.cover),
+        child: Lottie.asset("assets/animations/animate.json",fit: BoxFit.fill),
       ),
     );
   }
