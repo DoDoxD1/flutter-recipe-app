@@ -54,15 +54,17 @@ class _PopularSectionState extends State<PopularSection> {
     return Container(
       height: 100,
       decoration: BoxDecoration(
-        color: diets[index].viewIsSelected ? Colors.white:Colors.transparent,
+        color: diets[index].viewIsSelected ? Colors.white : Colors.transparent,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: diets[index].viewIsSelected ?[
-          BoxShadow(
-              color: const Color(0xff1D1617).withOpacity(0.3),
-              offset: const Offset(0, 10),
-              blurRadius: 40,
-              spreadRadius: 0)
-        ]:[x],
+        boxShadow: diets[index].viewIsSelected
+            ? [
+                BoxShadow(
+                    color: const Color(0xff1D1617).withOpacity(0.3),
+                    offset: const Offset(0, 10),
+                    blurRadius: 40,
+                    spreadRadius: 0)
+              ]
+            : [],
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
